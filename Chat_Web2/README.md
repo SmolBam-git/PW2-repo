@@ -42,4 +42,34 @@ Flujo de la Aplicación
 Objetivo de la Aplicación
 Facilitar la comunicación fluida y en tiempo real entre usuarios, permitiendo conversaciones privadas y en grupo, con opciones adicionales como ubicación y correo.
 
-Descripción de carpetas: 
+Descripción de carpetas:
+
+Descripción de las carpetas y archivos:
+Archivos principales
+
+index.php: Página de inicio.
+register.php: Formulario de registro de usuario.
+users.php: Página donde se listan los usuarios disponibles.
+chat.php: Pantalla de chat entre usuarios.
+chat_group.php: Chat grupal.
+createGroup.php: Interfaz para crear un nuevo grupo de chat.
+header.php: Encabezado compartido en varias páginas.
+Base de datos
+
+chatapp.sql: Archivo SQL con la estructura de la base de datos.
+Estilos
+
+style.css: Archivo de estilos para el diseño de la aplicación.
+JavaScript
+
+chat.js: Manejo de la interacción en el chat.
+chat_group.js: Funcionalidad específica para chats grupales.
+creategroup.js: Script para la creación de grupos.
+gropuserlist.js: Listado de usuarios en un grupo.
+login.js: Manejo de la autenticación.
+pass-show-hide.js: Mostrar/ocultar contraseña en los formularios.
+signup.js: Validaciones para el registro de usuario.
+users.js: Control de la lista de usuarios conectados.
+Imágenes
+
+Contiene imágenes utilizadas en la interfaz de usuario.
