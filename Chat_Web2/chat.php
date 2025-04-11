@@ -1,55 +1,78 @@
 <?php include_once "header.php"; ?>
 
+<head>
+  <!-- Agregar el archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
-  <div class="wrapper">
-    <section class="chat-area">
+  <div class="wrapper" style="display: flex; height: 100vh;">
+    
+    <!-- COLUMNA IZQUIERDA: SERVIDORES Y CONTACTOS -->
+    <aside style="width: 600px; background-color:rgb(73, 73, 73); border-right: 1px solid #ccc; padding: 20px; overflow-y: auto;">
+      <h3 style="margin-bottom: 20px;">Servidores</h3>
+
+      <!-- CONTACTO 1 -->
+      <div style="display: flex; align-items: center; margin-bottom: 15px; cursor: pointer;">
+        <img src="php/images/contacto1.jpg" alt="Ana Gómez" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+        <span><strong>Ana Gómez</strong></span>
+      </div>
+
+      <!-- CONTACTO 2 -->
+      <div style="display: flex; align-items: center; margin-bottom: 15px; cursor: pointer;">
+        <img src="php/images/contacto2.jpg" alt="Carlos Ruiz" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+        <span><strong>Carlos Ruiz</strong></span>
+      </div>
+
+      <!-- CONTACTO 3 -->
+      <div style="display: flex; align-items: center; margin-bottom: 15px; cursor: pointer;">
+        <img src="php/images/contacto3.jpg" alt="María López" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+        <span><strong>María López</strong></span>
+      </div>
+
+      <!-- GRUPO -->
+      <div style="display: flex; align-items: center; margin-top: 30px; cursor: pointer;">
+        <img src="php/images/grupo1.jpg" alt="Grupo Amigos" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+        <span><strong>Grupo: Amigos</strong></span>
+      </div>
+    </aside>
+
+    <!-- COLUMNA DERECHA: CHAT -->
+    <section class="chat-area" style="flex: 1;">
       <header>
-        <!-- Simulación de usuario -->
         <a href="users.php" class="back-icon"></a>
-
         <img src="php/images/chatcoin-chat-logo.png" alt="Usuario Ejemplo">
-
         <div class="details">
           <span>Juan Pérez</span>
           <p>En línea</p>
         </div>
-
-        <div style="margin-left: 30%; display: flex;" class="btn">
-          <button type="button" onclick="obtenerLocalizacion()"
-            style="border: none; outline: none; padding: 10px; margin-right: 10px; border-radius: 5px; background-color: #333; color: #fff; cursor: pointer;">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            Localización
+        <div style="margin-left: auto; display: flex;" class="btn">
+          <button type="button" onclick="obtenerLocalizacion()" class="btn-dark">
+            <i class="fa fa-map-marker" aria-hidden="true"></i> Localización
           </button>
-
-          <button type="button" onclick="abrirModal()"
-            style="border: none; outline: none; padding: 10px; margin-right: 10px; border-radius: 5px; background-color: #333; color: #fff; cursor: pointer;">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            Correo
+          <button type="button" onclick="abrirModal()" class="btn-dark">
+            <i class="fa fa-envelope" aria-hidden="true"></i> Correo
           </button>
         </div>
       </header>
 
       <div class="chat-box">
-        <!-- Mensajes simulados -->
         <div class="chat outgoing">
           <div class="details">
             <p>¡Hola Juan! ¿Cómo estás?</p>
           </div>
         </div>
-
         <div class="chat incoming">
           <img src="php/images/chatcoin-chat-logo.png" alt="Juan Pérez">
           <div class="details">
             <p>¡Hola! Todo bien, ¿y tú?</p>
           </div>
         </div>
-
         <div class="chat outgoing">
           <div class="details">
             <p>Bien, gracias. ¿Nos vemos mañana?</p>
           </div>
         </div>
-
         <div class="chat incoming">
           <img src="php/images/chatcoin-chat-logo.png" alt="Juan Pérez">
           <div class="details">
@@ -59,8 +82,7 @@
       </div>
 
       <form action="#" class="typing-area">
-        <input type="text" name="message" id="messageInput" class="input-field" placeholder="Escriba el mensaje aquí..."
-          autocomplete="off">
+        <input type="text" name="message" id="messageInput" class="input-field" placeholder="Escriba el mensaje aquí..." autocomplete="off">
         <button><i class="fab fa-telegram-plane"></i></button>
       </form>
     </section>
@@ -83,7 +105,5 @@
   </div>
 
   <script src="javascript/chat.js"></script>
-
 </body>
-
 </html>

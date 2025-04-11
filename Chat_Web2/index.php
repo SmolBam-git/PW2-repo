@@ -4,10 +4,16 @@
 ?>
 
 <?php include_once "header.php"; ?>
+
+<head>
+  <!-- Agregar el archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
   <div class="wrapper">
     <section class="form login">
-      <header>Chat</header>
+      <header>Inicio de Sesión</header>
       <form action="./chat.php" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="field input">

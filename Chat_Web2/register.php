@@ -1,14 +1,14 @@
-<?php
-
-
-?>
-
 <?php include_once "header.php"; ?>
+
+<head>
+  <!-- Agregar el archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
 
 <body>
   <div class="wrapper">
     <section class="form signup">
-      <header>Chat</header>
+      <header>Registro</header>
       <form action="index.php" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="name-details">
