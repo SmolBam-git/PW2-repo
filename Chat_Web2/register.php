@@ -9,7 +9,7 @@
   <div class="wrapper">
     <section class="form signup">
       <header>Chat</header>
-      <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
+      <form action="index.php" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="name-details">
           <div class="field input">
@@ -42,8 +42,8 @@
     </section>
   </div>
 
-  <script src="/javascript/pass-show-hide.js"></script>
-  <script src="/javascript/signup.js"></script>
+  <!-- <script src="/javascript/pass-show-hide.js"></script>
+  <script src="/javascript/signup.js"></script> -->
 
 </body>
 
