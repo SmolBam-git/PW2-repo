@@ -6,11 +6,25 @@
 </head>
 
 <body>
-  <div class="wrapper" style="display: flex; height: 100vh;">
-    
-    <!-- COLUMNA IZQUIERDA: SERVIDORES Y CONTACTOS -->
-    <aside style="width: 600px; background-color:rgb(73, 73, 73); border-right: 1px solid #ccc; padding: 20px; overflow-y: auto;">
+  <div class="wrapper">
+    <!-- COLUMNA 1: SERVIDORES -->
+    <aside class="servers" style="flex: 0 0 15%; background-color: rgb(73, 73, 73); padding: 20px; overflow-y: auto;">
       <h3 style="margin-bottom: 20px;">Servidores</h3>
+      <div class="server">
+        <img src="php/images/servidor1.jpg" alt="Servidor 1" />
+      </div>
+      <div class="server">
+        <img src="php/images/servidor2.jpg" alt="Servidor 2" />
+      </div>
+      <div class="server">
+        <img src="php/images/servidor3.jpg" alt="Servidor 3" />
+      </div>
+      <!-- Más servidores si es necesario -->
+    </aside>
+
+    <!-- COLUMNA 2: CONTACTOS -->
+    <aside class="contacts" style="flex: 0 0 15%; background-color: rgb(73, 73, 73); border-left: 1px solid #ccc; padding: 20px; overflow-y: auto;">
+      <h3 style="margin-bottom: 20px;">Contactos</h3>
 
       <!-- CONTACTO 1 -->
       <div style="display: flex; align-items: center; margin-bottom: 15px; cursor: pointer;">
@@ -37,8 +51,8 @@
       </div>
     </aside>
 
-    <!-- COLUMNA DERECHA: CHAT -->
-    <section class="chat-area" style="flex: 1;">
+    <!-- COLUMNA 3: CHAT -->
+    <section class="chat-area" style="flex: 1; background-color: #1f1f1f; color: white;">
       <header>
         <a href="users.php" class="back-icon"></a>
         <img src="php/images/chatcoin-chat-logo.png" alt="Usuario Ejemplo">
@@ -104,6 +118,6 @@
     </div>
   </div>
 
-  <script src="javascript/chat.js"></script>
+  <!-- <script src="javascript/chat.js"></script> -->
 </body>
 </html>
