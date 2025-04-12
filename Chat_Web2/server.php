@@ -5,7 +5,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+<div class="wrapper" style="display: flex; height: 100vh; background-color: #1f1f1f; color: white;">
     <!-- COLUMNA 1: SERVIDORES -->
 <aside class="servers" style="flex: 0 0 15%; background-color: rgb(73, 73, 73); padding: 20px; overflow-y: auto;">
   <h3 style="margin-bottom: 20px;">Servidores</h3>
@@ -97,6 +97,8 @@
       <option>General</option>
       <option>Arte</option>
       <option>Torneo de piedra, papel o tijera por turnos</option>
+      <option>+ Agregar Canal</option>
+      <option>- Eliminar Canal</option>
     </select>
   </div>
 
@@ -139,7 +141,7 @@
       <div class="chat incoming">
         <img src="./images/user3.jpg" alt="Ana Gómez" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 10px; margin-top: 5px; margin-bottom: 5px;">
         <div class="details">
-          <span style="display: block; font-size: 12px; color: #ccc;">Ana Gómez</span>
+          <span style="display: block; font-size: 12px; color: #ccc;">Rafael Orta</span>
           <p>mímete un rato</p>
         </div>
       </div>

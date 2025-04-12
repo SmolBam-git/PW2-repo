@@ -7,7 +7,7 @@
 
 <head>
   <!-- Agregar el archivo CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -33,8 +33,8 @@
     </section>
   </div>
   
-  <!-- <script src="javascript/pass-show-hide.js"></script>
-  <script src="javascript/login.js"></script> -->
+  <script src="javascript/pass-show-hide.js"></script>
+  <!-- <script src="javascript/login.js"></script> -->
 
 </body>
 </html>

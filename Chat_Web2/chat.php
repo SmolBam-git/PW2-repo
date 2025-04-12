@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+<div class="wrapper" style="display: flex; height: 100vh; background-color: #1f1f1f; color: white;">
     <!-- COLUMNA 1: SERVIDORES -->
 <aside class="servers" style="flex: 0 0 15%; background-color: rgb(73, 73, 73); padding: 20px; overflow-y: auto;">
   <h3 style="margin-bottom: 20px;">Servidores</h3>
