@@ -1,7 +1,6 @@
 <?php include_once "header.php"; ?>
 
 <head>
-  <!-- Agregar el archivo CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -11,17 +10,15 @@
 <aside class="servers" style="flex: 0 0 15%; background-color: rgb(73, 73, 73); padding: 20px; overflow-y: auto;">
   <h3 style="margin-bottom: 20px;">Servidores</h3>
   
-<!-- Add -->
+  <!-- Add -->
   <div class="server" style="margin-bottom: 15px;">
     <img src="./images/add.png" alt="Servidor 1" style="width: 35%; border-radius: 10px; object-fit: cover;">
     <span><strong>Añadir Servidor</strong></span>
   </div>
 
   <!-- Servidor 1 -->
-  <div class="server">
-    <a href="server.php" class="server-link">
-    <img src="./images/server1.jpg" alt="Servidor 1">
-    </a>
+  <div class="server" style="margin-bottom: 15px;">
+    <img src="./images/server1.jpg" alt="Servidor 1" style="width: 40%; border-radius: 10px; object-fit: cover;">
   </div>
 
   <!-- Servidor 2 -->
@@ -52,8 +49,10 @@
   </div>
 
   <!-- Contacto 1 -->
-  <div style="display: flex; align-items: center; margin-bottom: 15px; cursor: pointer;">
-    <img src="./images/user1.jpg" alt="Ana Gómez" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+  <div style="display: flex; align-items: center; margin-bottom: 15px; cursor: pointer">
+    <a href="chat.php" class="chat-link">
+    <img src="./images/user1.jpg" alt="Ana Gómez">
+    </a>
     <span><strong>Ana Gómez</strong></span>
   </div>
 
@@ -70,7 +69,6 @@
   </div>
 </div>
 
-  <!-- Usuario actual anclado -->
   <a href="users.php" style="display: flex; align-items: center; margin-top: 20px; padding: 10px; background-color: #2e2e2e; border-radius: 10px; text-decoration: none; color: white; cursor: pointer;">
     <img src="./images/user.jpg" alt="Tú" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
     <div>
@@ -83,15 +81,25 @@
 
 </a>
 
-    <!-- COLUMNA 3: CHAT -->
-    <section class="chat-area" style="flex: 1; background-color: #1f1f1f; color: white;">
+    <section class="chat-area" style="flex: 1; background-color: #1f1f1f; color: white">
 
       <header>
-        <img src="./images/user1.jpg" alt="Usuario Ejemplo" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+        <a href="users.php" class="back-icon"></a>
+        <img src="./images/server1.jpg" alt="Usuario Ejemplo" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
         <div class="details">
-          <span>Ana Gómez</span>
-          <p>En línea</p>
+          <span>la clika pa'</span>
+          <p>Servidor</p>
         </div>
+
+        <div style="display: flex; align-items: center; margin-left: 30px;">
+    <span style="margin-right: 10px; color: white;">Canales</span>
+    <select style="padding: 5px; border-radius: 5px; background-color: #444; color: white; border: none;">
+      <option>General</option>
+      <option>Arte</option>
+      <option>Torneo de piedra, papel o tijera por turnos</option>
+    </select>
+  </div>
+
         <div style="margin-left: auto; display: flex;" class="btn">
           <button type="button" onclick="obtenerLocalizacion()" class="btn-dark">
             <i class="fa fa-map-marker" aria-hidden="true"></i> Localización
@@ -103,39 +111,36 @@
       </header>
 
       <div class="chat-box">
-      <!-- MENSAJE SALIENTE (TÚ) -->
+
       <div class="chat outgoing">
         <img src="./images/user.jpg" alt="Tú" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-left: 10px; margin-top: 5px; margin-bottom: 5px;">
         <div class="details">
           <span style="display: block; font-size: 12px; color: #ccc;">Tú</span>
-          <p>¡Hola Ana! ¿Cómo estás?</p>
+          <p>anda bien awitado esto</p>
         </div>
       </div>
 
-      <!-- MENSAJE ENTRANTE (ANA GÓMEZ) -->
       <div class="chat incoming">
         <img src="./images/user1.jpg" alt="Ana Gómez" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 10px; margin-top: 5px; margin-bottom: 5px;">
         <div class="details">
           <span style="display: block; font-size: 12px; color: #ccc;">Ana Gómez</span>
-          <p>¡Hola! Todo bien, ¿y tú?</p>
+          <p>son las 4am w</p>
         </div>
       </div>
 
-      <!-- MENSAJE SALIENTE (TÚ) -->
       <div class="chat outgoing">
         <img src="./images/user.jpg" alt="Tú" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-left: 10px; margin-top: 5px; margin-bottom: 5px;">
         <div class="details">
           <span style="display: block; font-size: 12px; color: #ccc;">Tú</span>
-          <p>Bien, gracias. ¿Nos vemos mañana?</p>
+          <p>y luego</p>
         </div>
       </div>
 
-      <!-- MENSAJE ENTRANTE (ANA GÓMEZ) -->
       <div class="chat incoming">
-        <img src="./images/user1.jpg" alt="Ana Gómez" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 10px; margin-top: 5px; margin-bottom: 5px;">
+        <img src="./images/user3.jpg" alt="Ana Gómez" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 10px; margin-top: 5px; margin-bottom: 5px;">
         <div class="details">
           <span style="display: block; font-size: 12px; color: #ccc;">Ana Gómez</span>
-          <p>Claro, ¿a qué hora?</p>
+          <p>mímete un rato</p>
         </div>
       </div>
     </div>
@@ -147,22 +152,15 @@
     </section>
   </div>
 
-
-
-  <!-- <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="cerrarModal()">&times;</span>
-      <h2>Enviar Correo a Ana Gomez:</h2>
-      <form id="correoForm">
-        <label for="asunto">Asunto:</label>
-        <input type="text" id="asunto" name="asunto" placeholder="Asunto..." required>
-        <br>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" placeholder="..." required></textarea>
-        <button type="button" style="margin-top:30px; border-radius:3px" onclick="enviarCorreo()">Enviar</button>
-      </form>
-    </div>
-  </div> -->
+  <script>
+    // Mostrar el contenido del dropdown al hacer hover
+    document.querySelector('.dropdown').addEventListener('mouseenter', function() {
+      this.querySelector('.dropdown-content').style.display = 'block';
+    });
+    document.querySelector('.dropdown').addEventListener('mouseleave', function() {
+      this.querySelector('.dropdown-content').style.display = 'none';
+    });
+  </script>
 
   <!-- <script src="javascript/chat.js"></script> -->
 </body>

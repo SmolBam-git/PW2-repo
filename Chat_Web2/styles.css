@@ -40,6 +40,31 @@ html, body {
     object-fit: cover;
   }
 
+  .server-link {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .server-link img {
+    width: 40%; 
+    border-radius: 10px; 
+    object-fit: cover;
+  }
+
+  .chat-link {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .chat-link img {
+    width: 40%; 
+    border-radius: 10px; 
+    object-fit: cover;
+  }
+  
+
   .contacts {
     flex: 0 0 18%; /* Aumenta al 18% */
     background-color: rgb(73, 73, 73);
