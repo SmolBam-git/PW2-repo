@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 :root {
-  --bg-main: #1f1f1f; /* color de fondo principal */
-  --bg-secondary: rgb(44, 44, 44); /* color de fondo secundario */
-  --text-main: #ececf1; /* color de texto principal */
-  --text-secondary: #a9a9b3; /* color de texto secundario */
-  --border-color: #565869; /* color de bordes */
-  --accent: #444; /* color de acento */
-  --error-bg: #5a2a2e; /* color de fondo para errores */
-  --error-border: #b14a4f; /* color de borde para errores */
-  --error-text: #fddde0; /* color de texto para errores */
+  --bg-main: #1f1f1f;
+  --bg-secondary: rgb(44, 44, 44);
+  --text-main: #ececf1;
+  --text-secondary: #a9a9b3;
+  --border-color: #565869;
+  --accent: #444;
+  --error-bg: #5a2a2e;
+  --error-border: #b14a4f;
+  --error-text: #fddde0;
 }
 
 * {
@@ -32,7 +32,7 @@ body {
 
 .wrapper {
   background: var(--bg-secondary);
-  max-width: 800px; /* ajuste para mayor tamaño */
+  max-width: 800px;
   width: 100%;
   border-radius: 16px;
   box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.25),

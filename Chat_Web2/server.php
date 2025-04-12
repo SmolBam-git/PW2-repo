@@ -31,7 +31,6 @@
     <img src="./images/server3.png" alt="Servidor 3" style="width: 40%; border-radius: 10px; object-fit: cover;">
   </div>
   
-  <!-- Agrega más servidores si quieres -->
 </aside>
 
 
@@ -155,7 +154,6 @@
   </div>
 
   <script>
-    // Mostrar el contenido del dropdown al hacer hover
     document.querySelector('.dropdown').addEventListener('mouseenter', function() {
       this.querySelector('.dropdown-content').style.display = 'block';
     });
